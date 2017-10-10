@@ -82,4 +82,12 @@ class Example{
 ***
 # 代码尽量干净
 - 合并代码时, 把注释掉的代码删除掉, 自己可以保留注释的代码(很少的注释可以接受, 多的就不可以)
-
+***
+# 注意点
+- 反斜杠'/'用全局变量`DIRECTORY_SEPARATOR`代替
+- 在Linux环境下执行php命令要在php前面拼接完整路径,可以在配置项定义好php路径.例如: 
+```
+    'command' => [
+        'php_command' => '/usr/local/php/bin/php'
+    ]
+```
