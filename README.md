@@ -91,3 +91,5 @@ class Example{
         'php_command' => '/usr/local/php/bin/php'
     ]
 ```
+
+- 给别人代码或上传代码到服务器前先执行两条命令`php artisan cache:clear` 和 `composer dump-autoload`
