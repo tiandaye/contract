@@ -64,7 +64,8 @@
 
 ## 引用变量
 
-- 引用变量要带有`r`(代表reference) 前缀。如：
+- 引用变量要带有 `r`(代表reference) 前缀。如：
+
 ```
 class Example{
     $mExam = "";
@@ -84,20 +85,21 @@ class Example{
 ## 类命名
 
 - 使用**大驼峰**
-  - 模型类【model】
 
-- 使用**大驼峰**，例如： `Area`, `ItemType`
-  - 控制器类【controller】, 使用**大驼峰 + `Controller` 后缀 **, 例如： `IndexController`, `InvoiceTypeController`
-  - 请求类【request】
+	- 模型类【model】，例如： `Area`, `ItemType`
+	
+	- 控制器类【controller】, 使用**大驼峰 + `Controller` 后缀 **, 例如： `IndexController`, `InvoiceTypeController`
+	
+	- 请求类【request】, 新建和修改的请求分别使用 **`Create` 前缀 + 大驼峰 + `Request` 后缀** 和  **`Update` 前缀 + 大驼峰 + `Request` 后缀**。例如：`UpdateCodeTypeRequest.php`, `CreateAreaRequest.php` 
 
-- 新建和修改的请求分别使用 **`Create` 前缀 + 大驼峰 + `Request` 后缀** 和  **`Update` 前缀 + 大驼峰 + `Request` 后缀**。例如：`UpdateCodeTypeRequest.php`, `CreateAreaRequest.php` 
-  - 仓库类【repository】
-使用**大驼峰 + `Repository` 后缀 **, 例如： `AreaRepository.php`, `InvoiceHeaderTypeRepository.php`
-  - ##提供者类【Providers】
-使用**大驼峰 + `ServiceProvider` 后缀 **, 例如： `AppServiceProvider.php`, `PassportDingoProvider.php`
+	- 仓库类【repository】,使用**大驼峰 + `Repository` 后缀 **, 例如： `AreaRepository.php`, `InvoiceHeaderTypeRepository.php`
+	
+	- 提供者类【Providers】,使用**大驼峰 + `ServiceProvider` 后缀 **, 例如： `AppServiceProvider.php`, `PassportDingoProvider.php`
 
 ## 类方法的命名
+
 名称一般使用 **动词 + 名词** 构成。所以名称应该说明方法是做什么的。一般名称的前缀都是有第一规律的，如 `is`（判断）、`get`（得到），`set`（设置）， `can`（能否）。
+
 方法的命名使用**小驼峰**，首字母小写或者使用下划线 ”_”，例如 `getLessonOne()` ， `_getResource()`，通常下划线开头的方法属于私有方法。
 
 ## 类属性的命名
@@ -127,6 +129,7 @@ class Example{
 - 反斜杠'/'用全局变量`DIRECTORY_SEPARATOR`代替
 
 - 在Linux环境下执行php命令要在php前面拼接完整路径,可以在配置项定义好php路径.例如: 
+
 ```
     'command' => [
         'php_command' => '/usr/local/php/bin/php'
